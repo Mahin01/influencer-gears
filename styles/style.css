@@ -12,8 +12,131 @@ li{
 
 a{
     text-decoration: none;
+    color: #3A3A3A;
 }
 
 img{
     width: 100%;
 }
+
+/* Header - Navigation Styles */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 120px;
+}
+
+.nav .site-title{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.menu-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.menu-container a{
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    padding: 0px 20px;
+}
+
+.menu-item i{
+    color: black;
+}
+
+/* Main Area Styles */
+
+/* Influencer Section Styles*/
+.influencer{
+    margin: 0px 120px 50px 120px;
+}
+.influencer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.influencer-info, .influencer-img{
+    flex: 1;
+}
+
+.influencer-info{
+    margin-top: 80px;
+    color: #3A3A3A;
+}
+
+.influencer-info .influencer-title{
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.influencer-info .influencer-details{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.influencer-info .prebook-btn{
+    background: #E02C6D;
+    border-radius: 41px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.influencer-img{
+    background-image: url(../images/Circle\ design.svg);
+    background-size: cover;
+}
+
+/* Responsive Layout Style */
+
+@media screen and (max-width:576px) {
+    /* Header Area - Navigation Menu Responsive */
+    .nav{
+        flex-flow: column wrap;
+        text-align: center; 
+        margin: 10px;
+    }
+
+    .menu-container{
+        flex-flow: column wrap;
+    }
+
+    .menu-container a { 
+        padding: 10px;
+        border-top: 1px solid rgba(72, 72, 72, 0.7); 
+    }
+
+    .menu-container li:first-child a{
+        border-top: none; 
+    }   
+    
+    /* Influencer Section Responsive Styles */
+    .influencer{
+        margin: 10px;
+        text-align: center;
+    }
+
+    .influencer-container{
+        flex-flow: column wrap;
+        gap: 25px;
+    }
+
+    .influencer-info{
+        margin-top: 0;
+    }
+
+    .influencer-info .influencer-title{
+        font-size: 30px;
+    }
+}
+
