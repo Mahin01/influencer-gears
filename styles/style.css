@@ -53,7 +53,7 @@ img{
 
 /* Influencer Section Styles*/
 .influencer{
-    margin: 0px 120px 50px 120px;
+    margin: 0px 120px;
 }
 .influencer-container{
     display: flex;
@@ -97,6 +97,24 @@ img{
     background-size: cover;
 }
 
+/* Brands Section Styles */
+
+.brands{
+    margin: 50px 120px;
+}
+
+.brands-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 25px 50px;
+    background: #FFFFFF;
+    filter: drop-shadow(30px 20px 5px rgba(0, 0, 0, 0.05));
+    border-radius: 10px;
+}
+
 /* Responsive Layout Style */
 
 @media screen and (max-width:576px) {
@@ -104,7 +122,7 @@ img{
     .nav{
         flex-flow: column wrap;
         text-align: center; 
-        margin: 10px;
+        margin: 20px 10px;
     }
 
     .menu-container{
@@ -122,7 +140,7 @@ img{
     
     /* Influencer Section Responsive Styles */
     .influencer{
-        margin: 10px;
+        margin: 20px 10px;
         text-align: center;
     }
 
@@ -138,5 +156,18 @@ img{
     .influencer-info .influencer-title{
         font-size: 30px;
     }
+
+    /* Brands Section Responsive */
+    .brands{
+        margin: 20px 10px;
+    }
+
+    .brands-container{
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    
 }
 
